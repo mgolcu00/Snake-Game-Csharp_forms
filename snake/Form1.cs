@@ -161,7 +161,7 @@ namespace snake
             if (snake.getPosition(0) == Food.Location)
             {
                 Score += 10;
-                if (Score % 20 == 0)
+                if (Score % 100 == 0)
                     Level_Up();
                 lblScore.Text = "Score : " + Score;
                 snake.GrowUp();
